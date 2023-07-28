@@ -50,7 +50,7 @@ class SpringappApplicationTests {
 
 	@Test
 	void testgetByID() throws Exception {
-		mockMvc.perform(get("/123")
+		mockMvc.perform(get("/1")
 				.accept(MediaType.APPLICATION_JSON))
 				.andDo(print())
 				.andExpect(status().isOk())
